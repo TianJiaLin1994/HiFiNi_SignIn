@@ -11,8 +11,9 @@ def main():
     is_sign = False
     for line in html_text.splitlines():
         if line.find('今天已经签过啦') != -1:
-            print(line)
+            print("今天已经签过啦")
             is_sign = True
+    if not is_sign: print("签到成功!")
     return 0
 
 if __name__ == '__main__':
